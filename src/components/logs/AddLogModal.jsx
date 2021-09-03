@@ -1,16 +1,30 @@
 import React, {useState} from 'react';
+import {connect, useDispatch} from "react-redux";
 import M from 'materialize-css/dist/js/materialize.min';
+import {addLog} from "../../actions/logActions";
 
 const AddLogModal = () => {
     const [message, setMessage] = useState('');
     const [attention,setAttention] = useState(false);
     const [tech,setTech] = useState('');
+    const dispatch = useDispatch();
 
     const onSubmit = () => {
         if(message === '' || tech === ''){
             M.toast({html:'Please enter a message and tech'});
         }else{
-            console.log(message,tech,attention);
+            const newLog = {
+                message,
+                attention,
+                tech,
+                date: new Date()
+            }
+
+            dispatch(addLog(newLog));
+
+            setMessage('');
+            setAttention(false);
+            setTech('');
         }
     }
 

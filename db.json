@@ -1,25 +1,32 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 005",
+      "message": "Updates",
       "attention": false,
-      "date": "01.09.2021",
-      "tech": "Sam Smith"
+      "tech": "Sara Wilson",
+      "date": "2021-09-03T06:09:35.603Z",
+      "id": 5
     },
     {
-      "id": 2,
-      "message": "Workstation 007 not posting",
-      "attention": true,
-      "date": "01.09.2021",
-      "tech": "John Doe"
+      "message": "Dispatch by useDispatch",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2021-09-03T06:09:44.697Z",
+      "id": 6
     },
     {
-      "id": 3,
-      "message": "Changed memory on workstation 050",
+      "message": "Update",
       "attention": false,
-      "date": "01.09.2021",
-      "tech": "Sara Wilson"
+      "tech": "John Doe",
+      "date": "2021-09-03T04:35:47.473Z",
+      "id": 7
+    },
+    {
+      "message": "Search",
+      "attention": false,
+      "tech": "Sara Wilson",
+      "date": "2021-09-03T04:36:03.599Z",
+      "id": 8
     }
   ],
   "techs": [
