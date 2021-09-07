@@ -23,7 +23,7 @@
   "scripts": {
     "start": "concurrently \"yarn start\" \"yarn run json-server\"",
     "json-server": "json-server --watch db.json --port 5000",
-    "build": "react-scripts build",
+    "build": "concurrently \"yarn start\" \"yarn run json-server\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
