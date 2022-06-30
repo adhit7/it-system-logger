@@ -1,4 +1,4 @@
-# IT SYstem Logger
+# IT System Logger
 
 It is react based web application ,we can manage the people's tasks and data will come from json server.
 
